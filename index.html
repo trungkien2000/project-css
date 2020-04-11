@@ -5,11 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_naruto.png" type="icon">
     <title>Naruto Team 07</title>
 </head>
 
 <body>
+    <nav>
+        <img src="team7.jpg" alt="Team 7" id="nav-img">
+        <a href="#">HOME</a>
+        <a href="#">JOBS</a>
+        <a href="#">CONTACT</a>
+    </nav>
 
+    <div id="main">
+        <div id="title">GENERAL INQUIRIES</div>
+        <form action="#">
+            <label for="name">NAME:</label><span class="required">*</span><br>
+            <input type="text" name="name" id="name" required placeholder="Enter your name here..."><br>
+            <label for="email">EMAIL:</label><span class="required">*</span><br>
+            <input type="email" name="email" id="email" required placeholder="Enter your email here..."><br>
+            <label for="nature">NATURE OF ENQUIRY</label><br>
+            <select name="nature" id="nature">
+                <option value="general">General</option>
+                <option value="register team">Register team</option>
+                <option value="mission">Mission</option>
+                <option value="sensei">Sensei</option>
+            </select><br>
+            <label for="message">MESSAGE:</label><span class="required">*</span><br>
+            <textarea name="message" id="message" rows="auto" placeholder="Enter your message here..."></textarea><br>
+            <label for="add">3 + 4 = ?</label><br>
+            <input type="number" name="add" id="add" placeholder="Enter the result..."><br>
+            <input type="submit" value="SUBMIT" id="submit" onclick="alert('Hello master :v')">
+        </form>
+    </div>
+    <div id="footer ">
+        <div id="user">1000000 Online Users - 777000 Visited Users</div>
+        <marquee behavior="" direction="left">
+            <div id="animation">Welcome to our team. We are <span style="color: red; font-weight: bold;">Team 7</span> from <span style="color: green;font-weight: bold;">Konoha Village</span> - <span style="color: orange;font-weight: bold;">Naruto</span>, <span style="color: pink;font-weight: bold;">Sakura</span>,
+                <span style="color: blue;font-weight: bold;">Sasuke</span> and <span style="color: silver;font-weight: bold;">Kakashi Sensei</span>.</div>
+        </marquee>
+    </div>
 </body>
 
 </html>

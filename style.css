@@ -1,5 +1,115 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 1em 5em 0 5em;
+    padding: 0 2em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 2em;
+}
+
+#nav-img {
+    width: 6em;
+    height: auto;
+    position: relative;
+    animation-name: navimage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+nav>a {
+    font-size: 1.5em;
+}
+
+@keyframes navimage {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+}
+
+#title {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.required {
+    color: red;
+    float: right;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 0.4em;
+    border-radius: 0.1em;
+}
+
+#nature {
+    cursor: pointer;
+}
+
+#message {
+    resize: none;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+#submit:hover {
+    background-color: lightblue;
+}
+
+#user {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: lightsteelblue;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: red;
+}
+
+#animation {
+    display: block;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    * {
+        font-size: 16px;
+    }
+    #submit {
+        font-size: 10px !important;
+    }
 }
